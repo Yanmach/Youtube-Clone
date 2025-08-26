@@ -1,0 +1,394 @@
+main{
+ display: flex;
+ gap: 20px;
+ padding: 20px;
+
+}
+
+iframe{
+    flex: 2;
+    width: 952px;
+    height: 746px;
+}
+
+.recomendados{
+    flex: 1;
+    padding: 10px;
+  max-width: 360px;
+}
+
+.recomendados h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.video-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom:15px ;
+}
+.video-meta {
+    font-size: 12px;
+    color: #606060;
+}
+
+.video-card img{
+    width: 160px;
+    height: 90px;
+    border-radius: 6px;
+}
+
+.video-card h5{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.info-video {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.canal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.canal img {
+    border-radius: 50%;
+}
+
+.btn-inscrever {
+    background-color: #cc0000;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+
+
+}
+
+.descricao {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+main {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+
+}
+
+section {
+  flex: 3; 
+}
+aside {
+  flex: 1; 
+  margin-left: 20px; 
+}
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky; /* gruda no topo */
+  top: 0;
+  z-index: 100;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  
+}
+
+nome.youtube{color: #fff;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 20px; 
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.user-icons span {
+  margin-left: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+section iframe {
+     width: 100%;
+  height: 400px;  /* você pode ajustar */
+  border-radius: 8px;
+}
+
+header .logo img {
+    height: 30px;
+    cursor: pointer;
+}
+
+header .search {
+  display: flex;
+  flex: 1;     
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+header .search input {
+ flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  min-width: 300px;
+}
+
+
+header .search button {
+   border: 1px solid #ccc;
+  border-left: none;
+  padding: 8px 16px;
+  border-radius: 0 20px 20px 0;
+  background-color: #f8f8f8;
+  cursor: pointer;
+
+}
+
+header .user-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;      
+}
+
+header .user-icons img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+body {
+    background-color: #f9f9f9; /* Fundo cinza claro do YouTube */
+    font-family: 'Roboto', sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+}
+
+.btn-inscrever:hover {
+  background-color: #e60000;
+}
+
+.descricao {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  
+  position: relative;
+}
+.descricao.expandida {
+  max-height: none;}
+
+  .descricao-toggle {
+  color: #065fd4;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Proporção 16:9 */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.nome-youtube{
+    display: flex;
+    
+}
+
+
+
+
+
+
+
+
+.nome-e-inscritos {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome-e-inscritos p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.nome-e-inscritos span {
+  font-size: 14px;
+  color: #606060;
+}
+
+
+.video-acoes {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaço entre os botões */
+  margin-top: 20px;
+}
+
+.acao-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Espaço entre o ícone e o texto */
+  font-size: 14px;
+  color: #606060;
+  cursor: pointer;
+}
+
+.acao-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.video-header-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Empurra os dois grupos para as pontas */
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+  /* Ajusta o cabeçalho (Header) */
+  header {
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+    justify-content: center; /* Centraliza os itens */
+    padding: 10px;
+  }
+  
+  .header-left {
+    margin-bottom: 10px; /* Adiciona espaço abaixo do logo e menu */
+  }
+
+  .search {
+    width: 100%; /* Faz a barra de pesquisa ocupar toda a largura */
+    margin: 10px 0; /* Adiciona margem em cima e embaixo */
+  }
+
+  /* Faz a seção do canal e ações ficarem em coluna */
+  .video-header-info {
+    flex-direction: column; /* Coloca os itens um abaixo do outro */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    margin-top: 15px;
+    gap: 15px;
+  }
+
+  .video-acoes {
+    flex-wrap: wrap; /* Garante que os botões não fiquem muito apertados */
+    justify-content: flex-start;
+  }
+
+  /* Ajusta a seção principal de vídeo e recomendados */
+  main {
+    flex-direction: column; 
+    padding: 10px;
+  }
+  
+  /* Faz o vídeo principal se ajustar à tela */
+  section iframe {
+    height: 300px; /* Ajusta a altura do vídeo para telas menores */
+  }
+
+  /* Ajusta a barra lateral dos vídeos recomendados */
+  .recomendados {
+    max-width: 100%; /* Ocupa a largura total */
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  header .user-icons{
+    display: none;
+  }
+
+}
